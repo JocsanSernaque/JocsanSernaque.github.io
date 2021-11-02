@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jocsan Sernaque">
-    <meta name="description" content="Portafolio Web Jocsan Sernaque, Desarrollador Web">
+    <meta name="description" content="Creador de sitios webs súper espectaculares.">
     <meta name="keywords" content="Portafolio Web, Desarrollador Web en Piura, Creación de Páginas webs">
+    <link rel="shortcut icon" href="images/logo-JS.svg">
     <title>Jocsan │ Desarrollador Web</title>
     <!-- kit fontawesome -->
     <script src="https://kit.fontawesome.com/de10beeb27.js" crossorigin="anonymous"></script>
@@ -17,13 +18,19 @@
 </head>
 <body>
     <header class="header">
-        <a href="#home" class="navbar__logo"> Jocsan Sernaque</a>
+       <div class="logo">
+        <a href="#home" class="navbar__logo"> 
+            <img src="images/logo-JS.svg" alt="">
+                Jocsan Sernaque
+            </a>
+       </div>
+        
         <i class="fas fa-bars btn"></i>
         <nav class="navbar__links">
             <a href="#home" class="link__section active">Inicio</a>
             <a href="#about" class="link__section">Sobre mí</a>
             <a href="#services" class="link__section">Servicios</a>
-            <a href="#proyect" class="link__section">Proyectos</a> 
+            <a href="#proyects" class="link__section">Proyectos</a> 
             <i class="fas fa-times btn"></i>           
         </nav>
     </header>
@@ -33,9 +40,9 @@
             <h2>¡Hola!, gracias por visitarme.</h2>
             <h1>Soy Jocsan,</h1>
             <p class="spaciality">Desarrollador Web.</p>
-            <p>Creo páginas web's super expectaculares.</p>
+            <p>Creo sitios web's súper expectaculares.</p>
 
-            <a href="./docs/CV_JocsanSernaque.pdf" class="btn__cta-CV" target="_blank" >Descargar CV</a>
+            <a href="https://wa.me/916702745" class="btn__cta-CV" target="_blank" >Conectar</a>
 
             <div class="main__social-media">
                 <a href="https://www.linkedin.com/in/jocsan-sernaque-09733b198/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
@@ -130,9 +137,9 @@
             <div class="services__card">
                 <span>Desarrollo Web</span>
                 <p>
-                    Los sitios web de gran impacto, profesional y dinámico, enfocados al público objetivo
+                    Realizo sitios web de gran impacto, profesional y dinámico, enfocados al público objetivo
                     con navegación adaptable a cualquier tamaño del dispositivo.
-                </p>   
+                </p>
                 <img src="images/webDev.svg" alt="web-developer">            
             </div>
 
@@ -147,24 +154,28 @@
         </div>
     </section>
 
-    <section class="section__proyect bg-p" id="proyect">
+    <section class="section__proyect bg-p" id="proyects">
         <h2 class="section__title">Proyectos</h2>
         <div class="section__proyect--cards">
 
             <div class="proyects__card">
-                <span>Landing Page Piura-Perú</span>                
-                <img src="images/landingPiura.png" alt="Landing Page Piura-Perú" loading="lazy">
-                <a href="https://github.com/JocsanSernaque/landingPiura" target="_blank"><i class="fas fa-arrow-right"></i></a>       
+                <span>Landing Page Piura-Perú</span>    
+                <a  href="https://github.com/JocsanSernaque/landingPiura" target="_blank">
+                    <img src="images/piura.png" alt="Landing Page Piura-Perú" loading="lazy">
+                </a>  
             </div>
             <div class="proyects__card">
-                <span>Coming soon</span>                
-                <!-- <img src="images/" alt="" loading="lazy"> -->
-                <a href="#"><i class="fas fa-arrow-right"></i></a> 
+                <span>Landing Page Cusco-Perú</span>   
+                <a href="https://github.com/JocsanSernaque/LandingCusco" target="_blank">
+                    <img src="images/cuzco.png" alt="Landing Page Cusco-Perú" loading="lazy">
+                </a> 
             </div>
             <div class="proyects__card">
-                <span>Coming soon</span>                
-                <!-- <img src="images/l" alt="" loading="lazy">              -->
-                <a href="#"><i class="fas fa-arrow-right"></i></a> 
+                <span>Landing Page logística Perú</span>  
+                <a href="">
+                    <img src="images/logistic.png" alt="Landing Page logisticPerú" loading="lazy"> 
+                </a>              
+                
             </div>
         </div>
     </section>

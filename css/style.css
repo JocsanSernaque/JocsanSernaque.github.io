@@ -32,6 +32,8 @@ body::-webkit-scrollbar{ width: 10px;}
 
 a{ text-decoration: none;}
 
+section[id]{ scroll-margin-top: 80px;}
+
 body::-webkit-scrollbar-thumb{
     background: var(--color_two);
     border-radius: 5px;
@@ -46,23 +48,29 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-between;
     align-items: center;
     z-index: 999;
+    
 }
 
 .header .navbar__logo{
     display: flex;    
     margin-left: 35px;
+    margin: 5px;
     color: var(--color_one);
     padding-left: 25px;     
     font-family: 'Dancing Script', cursive;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+.header .navbar__logo img{
+    width: 40px;
+    margin-right: 15px;
 }
 
 .btn{
     position: fixed;
-    top: 30px;
+    top: 25px;
     right: 15px;
-    color: var(--background);  
-    background-color: var(--color_two);
+    color: var(--color_two);  
+    background-color: transparent;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -70,7 +78,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 0 3px var(--color_two);
+    box-shadow: 0 0 5px var(--color_two);
     cursor: pointer;
 }
 
@@ -79,7 +87,7 @@ body::-webkit-scrollbar-thumb{
     top: 0;
     right: 0;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background: var(--color_two);
     display: flex;
     align-items: center;
@@ -108,8 +116,7 @@ body::-webkit-scrollbar-thumb{
 
 .navbar__links .fa-times{   
     color: var(--background_m);
-    border: 1px solid var(--background_m);    
-    box-shadow: var(--secundary-shadow);
+    border: 1px solid var(--background_m);     
 }
 
 .visibility{ clip-path: circle(850px at 100% 0); }
@@ -168,6 +175,7 @@ body::-webkit-scrollbar-thumb{
     color: var(--color_two);
     border: 1px solid var(--color_two);
     padding: 15px 30px;   
+    letter-spacing: 3px;
 }
 
 .btn__cta-CV:hover{
@@ -292,7 +300,7 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
     text-align: center;
     padding: .5rem;
-    color: var(--background_m);
+    color: var(--color_three);
 }
 
 .section__skill--icon:hover:nth-child(1){
@@ -377,39 +385,22 @@ body::-webkit-scrollbar-thumb{
 
 .proyects__card{
     position: relative;
-    margin-bottom: 2rem; 
-    border-radius: 15px;  
-    background-color: var(--background_m);
+    margin-bottom: 1rem;
+      
 }
 
 .proyects__card span{
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     color: var(--color_two);
 }
 
-.proyects__card img{    
-    width: 90%;    
-    height: 300px;
-    object-fit: cover;
-    object-position: center top;  
+.proyects__card img{      
+    width: 100%;    
     border-radius: 10px;  
     margin-bottom: 40px;   
-}
-
-.proyects__card a{
-    display: flex;
-    position: absolute;
-    left: 0;
-    bottom: 0;    
-    color: var(--color_two);
-}
-
-.proyects__card a i{
-    padding: 15px;
-    font-size: 1.2rem;
 }
 
 /* ----------------------------------------------------- */
@@ -453,8 +444,9 @@ body::-webkit-scrollbar-thumb{
     height: 2rem;    
     margin: 5px;
     color: var(--background_m);
-    box-shadow: var(--secundary-shadow);
+    box-shadow: 0 0 5px var(--background);    
 }
+
 .social__media--link i{
     position: absolute;
     top: 50%;
@@ -494,15 +486,15 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media screen and (min-width: 800px){
-    .navbar__logo{ width: 30%;}
+    .logo{ margin-left: 50px;}
     
     .fa-times{ display: none;}
 
     .navbar__links{
         position: relative;
+        width: 60%;
         clip-path: none;
-        flex-direction: row;        
-        justify-content: center;
+        flex-direction: row;         
         background: var(--background);
         transition: none;
     }
@@ -510,7 +502,7 @@ body::-webkit-scrollbar-thumb{
     .link__section{
         color: var(--color_one);
         font-weight: 300;
-        margin: 0 30px;
+        /* margin: 0 20px; */
         font-size: 15px;
     }
 
@@ -547,9 +539,10 @@ body::-webkit-scrollbar-thumb{
    .section__proyect--cards{
        display: grid;
        grid-template-columns: repeat(3, 1fr);
-       grid-gap: 5rem;       
+       grid-gap: 2rem;       
    }
-
+   .proyects__card img{ height: 200px;}
+   
    .social__media--link{
        width: 3.2rem;
        height: 3.2rem;
@@ -559,6 +552,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media screen and (min-width: 950px){
+    
     .figure__img{
         position: absolute;        
         display: flex;
