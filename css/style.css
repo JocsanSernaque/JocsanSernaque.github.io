@@ -428,6 +428,11 @@ body::-webkit-scrollbar-thumb{
     font-size: 1.2rem;
     margin-bottom: 3rem;
 }
+.footer h4{
+    position: absolute;
+    bottom: 2%;
+    
+}
 
 .footer__social--media{
     position: relative;
@@ -446,6 +451,7 @@ body::-webkit-scrollbar-thumb{
     color: var(--background_m);
     box-shadow: 0 0 5px var(--background);    
 }
+
 
 .social__media--link i{
     position: absolute;
