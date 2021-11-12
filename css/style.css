@@ -384,9 +384,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .proyects__card{
-    position: relative;
-    margin-bottom: 1rem;
-      
+    position: relative;   
 }
 
 .proyects__card span{
@@ -430,8 +428,7 @@ body::-webkit-scrollbar-thumb{
 }
 .footer h4{
     position: absolute;
-    bottom: 2%;
-    
+    bottom: 2%;    
 }
 
 .footer__social--media{
@@ -545,7 +542,7 @@ body::-webkit-scrollbar-thumb{
    .section__proyect--cards{
        display: grid;
        grid-template-columns: repeat(3, 1fr);
-       grid-gap: 2rem;       
+       grid-gap: 1.5rem;       
    }
    .proyects__card img{ height: 200px;}
    
