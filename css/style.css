@@ -158,7 +158,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 100;
-    color: var(--color_three);
+    /* color: var(--color_three); */
     letter-spacing: 2px;       
 }
 .article__presentation .spaciality{
@@ -264,7 +264,7 @@ body::-webkit-scrollbar-thumb{
 
 .article__desciption p{    
     color: var(--color_one);
-    font-weight: 100;    
+    font-weight: 200;    
 }
 
 .light-link{ color: var(--color_two); }
@@ -303,36 +303,6 @@ body::-webkit-scrollbar-thumb{
     color: var(--color_three);
 }
 
-.section__skill--icon:hover:nth-child(1){
-    color: rgb(236, 85, 15);
-}
-.section__skill--icon:hover:nth-child(2){
-    color: rgb(15, 137, 236);
-}
-.section__skill--icon:hover:nth-child(3){
-    color: var(--color_two);
-}
-.section__skill--icon:hover:nth-child(4){
-    color: rgb(103, 28, 224);
-}
-.section__skill--icon:hover:nth-child(5){
-    color: rgb(187, 161, 238);
-}
-.section__skill--icon:hover:nth-child(6){
-    color: rgb(0, 40, 92);
-}
-.section__skill--icon:hover:nth-child(7){
-    color: rgb(235, 117, 20);
-}
-.section__skill--icon:hover:nth-child(8){
-    color: rgb(42, 45, 49);
-}
-.section__skill--icon:hover:nth-child(9){
-    color: rgb(11, 71, 201);
-}
-.section__skill--icon:hover:nth-child(10){
-    color: rgb(3, 126, 10);
-}
 .section__skill--icon i{ font-size: 2.5rem;}
 
 .section__skill--icon span{ padding: 0.5rem;}
