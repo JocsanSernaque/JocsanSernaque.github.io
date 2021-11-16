@@ -157,8 +157,7 @@ body::-webkit-scrollbar-thumb{
 .article__presentation p{    
     font-size: 1.2rem;
     font-style: italic;
-    font-weight: 100;
-    /* color: var(--color_three); */
+    font-weight: 300;
     letter-spacing: 2px;       
 }
 .article__presentation .spaciality{
@@ -264,7 +263,8 @@ body::-webkit-scrollbar-thumb{
 
 .article__desciption p{    
     color: var(--color_one);
-    font-weight: 200;    
+    font-weight: 300;    
+    font-size: 18px;
 }
 
 .light-link{ color: var(--color_two); }
@@ -336,7 +336,8 @@ body::-webkit-scrollbar-thumb{
 .services__card p{    
     letter-spacing: 1px;    
     margin: 30px 0;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 18px;
     text-align: justify;
 }
 
