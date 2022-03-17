@@ -136,7 +136,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;  
     flex-direction: column; 
     width: 90%;
-    top: 65%;
+    top: 60%;
     left: 52%;
     transform: translate(-50%, -50%);
     z-index: 1;    
@@ -159,6 +159,7 @@ body::-webkit-scrollbar-thumb{
 .article__presentation .spaciality{
     text-transform: uppercase;      
     font-weight: 400;
+    margin-bottom: 20px;    
 }
 
 .btn__cta-CV{    
@@ -181,7 +182,7 @@ body::-webkit-scrollbar-thumb{
 
 .main__social-media{
     position: absolute;
-    top: 120%;
+    top: 130%;
     left: inherit;
     display: flex;
     justify-content: flex-start;
@@ -488,9 +489,7 @@ body::-webkit-scrollbar-thumb{
 
     .article__presentation{top: 50%;}
 
-    .article__presentation h1{ font-size: 6rem;}
-
-    .article__presentation .spaciality{margin-bottom: 20px ;}
+    .article__presentation h1{ font-size: 6rem;}    
 
     .main__social-media{
         top: 120%;
