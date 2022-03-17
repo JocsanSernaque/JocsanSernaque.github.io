@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @JocsanSernaque
-- 👀 I’m interested in Web Developer
+- 👀 I’m interested in Frontend Developing
 - 🌱 I’m currently learning UX UI Design
 - 💞️ I’m looking to collaborate on bussines
 
