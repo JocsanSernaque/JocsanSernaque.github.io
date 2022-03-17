@@ -30,9 +30,5 @@ link.forEach( (linkItem, e) => {
         });
         // En el link del Nav que hemos dado click agregamos la clase active
         link[e].classList.add('active')
-
-    })
-
-})
-
-
+    });
+});

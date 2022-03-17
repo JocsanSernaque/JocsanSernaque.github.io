@@ -2,8 +2,7 @@
 :root{
     scroll-behavior: smooth;
     --color_one: rgb(255, 255, 255);
-    --color_two: rgb(250, 234, 6);
-    
+    --color_two: rgb(250, 234, 6);    
     --color_three: rgb(182, 177, 177);
     --color_four: rgba(121, 113, 113, 0.596);
     --background: rgb(18 18 18);
@@ -121,28 +120,26 @@ body::-webkit-scrollbar-thumb{
 
 .visibility{ clip-path: circle(850px at 100% 0); }
 
- /*------------ Home - Inicio --------------  */
+/* ----------------------------------------------------- */
+ /*------------ HOME - INICIO --------------  */
+ /* ----------------------------------------------------- */
+
 .main__home{
     min-height: 100vh;
     position: relative;        
 }
 
-.bg-p{ padding: 0 30px;}
+.bg-p{ padding: 0 15px;}
 
 .article__presentation{   
     position: absolute; 
     display: flex;  
     flex-direction: column; 
     width: 90%;
-    top: 65%;
+    top: 70%;
     left: 52%;
     transform: translate(-50%, -50%);
     z-index: 1;    
-}
-
-.article__presentation h2{  
-    font-size: 1rem; 
-    font-weight: 300;   
 }
 
 .article__presentation h1{
@@ -155,8 +152,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .article__presentation p{   
-    font-size: 1rem;
-    font-style: italic;
+    font-size: 1rem;    
     font-weight: 300;
     letter-spacing: 2px;       
 }
@@ -185,7 +181,7 @@ body::-webkit-scrollbar-thumb{
 
 .main__social-media{
     position: absolute;
-    top: 115%;
+    top: 105%;
     left: inherit;
     display: flex;
     justify-content: flex-start;
@@ -205,8 +201,8 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;  
      
 }
@@ -270,10 +266,8 @@ body::-webkit-scrollbar-thumb{
 
 .article__description{
     display: flex;
-    flex-direction: column;     
-    /* border-radius: 8px;
-    padding: 1rem 0;     */
-    /* margin: 0 15px; */
+    flex-direction: column;  
+    margin: 0 20px;
     letter-spacing: 1.5px;  
 }
 
@@ -289,7 +283,7 @@ body::-webkit-scrollbar-thumb{
 
 .info__item{
     list-style-type: none;
-    padding-bottom: 1rem;
+    padding-bottom: 5px;
     font-size: 16px;
 }
 
@@ -357,7 +351,7 @@ body::-webkit-scrollbar-thumb{
     text-align: justify;
 }
 
-.services__card img{ width: 90%;}
+.services__card img{ width: 70%;}
 
 /* ------------------------------------------------------------ */
 /* -------------------Section - Proyects-------------------------------------------- */
@@ -446,23 +440,19 @@ body::-webkit-scrollbar-thumb{
         top: 65%;
         transition: .8s;
     }
-    .article__presentation h2{
-        font-size: 1.7rem;
-    }
+        
+    .article__description{margin: 0 55px;}
 
-    .section__presentation{ display: flex;}    
-
-    .figure__img-1{ padding-right: 2rem;}
+    .section__presentation{ display: flex;}        
 
     .figure__img-1 img{
-        height: 500px;
-        width: 200px;
+        height: 400px;
+        width: 150px;
     } 
 
     .section_title{ padding-top: 5rem;}
 
-    .section_services--cards{
-        margin-top: 20px;
+    .section_services--cards{        
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5rem;
@@ -498,23 +488,23 @@ body::-webkit-scrollbar-thumb{
 
     .article__presentation{top: 50%;}
 
-    .article__presentation h1{ font-size: 4rem;}
+    .article__presentation h1{ font-size: 6rem;}
 
-    .article__description{ margin: 0 20px;}
+    .article__presentation .spaciality{margin-bottom: 20px ;}
+
+    .main__social-media{
+        top: 120%;
+        left: 40%;
+    }
 
     .figure__img{
         position: absolute;        
         display: flex;
         width: 50%;
-        height: 350px;
-        top: 24%;        
+        height: 330px;
+        top: 20%;        
         left: 45%;     
     } 
-
-    .main__social-media{
-        top: 135%;
-        left: 35%;
-    }
 
     .section__presentation{flex-direction: row;}
 
@@ -537,7 +527,7 @@ body::-webkit-scrollbar-thumb{
         text-align: center;        
     }
 
-    .services__card img{ width: 50%;}   
+    .services__card img{ width: 35%;}   
    
     .social__media--link{
        width: 3.2rem;
