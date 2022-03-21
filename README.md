@@ -1,9 +1,22 @@
-- 👋 Hi, I’m @JocsanSernaque
-- 👀 I’m interested in Frontend Developing
-- 🌱 I’m currently learning UX UI Design
-- 💞️ I’m looking to collaborate on bussines
+<h2> <img src="https://media3.giphy.com/media/0fz5uNPHnoVHLEhAW2/giphy.gif" width="90"> 
+      Hi!, I'm Jocsan Sernaque
+     <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50">
+</h2>
+<img align='right' src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="230">
+<p><em>Computer Technician Graduate at <a href="https://www.iestpffaa.edu.pe/">IESTP"FFAA"</a><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
+</em></p>
 
-<!---
-JocsanSernaque/JocsanSernaque is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+```javascript
+const jocsan = {
+    pronouns: "He" | "Him",
+    code: ["Html5","Css3","Javascript", "Php"],
+    askMeAbout: ["web dev"],
+    technologies: {        
+        frontEnd: {
+            js: ["React js"],
+            css: ["bootstrap", "tailwind"]
+        },        
+        databases: ["MySql"]        
+    },   
+};
+```
