@@ -5,7 +5,7 @@
     --color_two: rgb(250, 234, 6);    
     --color_three: rgb(182, 177, 177);
     --color_four: rgba(121, 113, 113, 0.596);
-    --background: rgb(18 18 18);
+    --background: rgb(18, 18, 18);
     --background_m: rgb(39, 38, 38);
     --secundary-shadow: -2px -2px 2px rgba(66, 65, 65, 0.863),
                          2px 2px 2px rgba(29, 28, 28, 0.801);
@@ -40,6 +40,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 5px;
     border-right: 2px solid var(--background_m);
 }
+
 .header{
     position: fixed;
     width: 100%;
@@ -207,12 +208,15 @@ body::-webkit-scrollbar-thumb{
     border-radius: 50%;  
      
 }
+
 .figure__img img{    
     width: inherit;    
     object-fit: cover;
     clip-path: circle(50% at 50% 50%);    
 }
+/* ----------------------------------------------------- */
 /* -------------------Section - About -------------------------------------------- */
+/* ----------------------------------------------------- */
 .section__aboutme{
     position: relative;
     display: flex;
@@ -228,16 +232,6 @@ body::-webkit-scrollbar-thumb{
     padding-bottom: 2.5rem;
     color: var(--color_two);
     font-size: 2rem;
-}
-
-.section__subtitle{
-    display: flex;    
-    justify-content: center;    
-    align-items: center;
-    text-align: center; 
-    margin-top: 1.875rem;
-    color: var(--color_two);
-    letter-spacing: 3px;    
 }
 
 .section__presentation{ 
@@ -294,69 +288,46 @@ body::-webkit-scrollbar-thumb{
     padding-right: 5px;
 }
 
-/* ------------------------------------- */
-/* -------------------Skill -------------------------------------------- */
+/* -----------------------------------------------*/
+/* ------------------- Section Skill -------------------------------------------- */
 /* ----------------------------------------------------------- */
 
 .section__skill{
-    margin: 2.5rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    grid-gap: 1.5rem;
-}
-
-.section__skill--icon{
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
-    text-align: center;
-    padding: .5rem;
-    color: var(--color_three);
-}
-
-.section__skill--icon i{ font-size: 2.5rem;}
-
-.section__skill--icon span{ padding: 0.5rem;}
-
-/* --------------------------------------------------- */
-/* -------------------Section - Services-------------------------------------------- */
-
-.section_services--cards{
-    position: relative;
-    display: flex;
-    flex-direction: column;    
-    text-align: center;
-    width: 100%;
-    flex-wrap: wrap;    
-}
-
-.services__card{    
-    margin-bottom: 2rem;
-    padding: .5rem;   
-    border-radius: 10px;         
-}
-
-.services__card span{
-    display: flex;
-    justify-content: center;    
-    color: var(--color_two);
-    padding: 1rem;
-    font-size: 1.3rem;    
-}
-
-.services__card p{    
-    letter-spacing: 1px;    
     margin: 30px 0;
-    font-weight: 300;
-    font-size: 16px;
-    text-align: justify;
+    padding: 15px;
 }
-
-.services__card img{ width: 70%;}
-
+.skill{
+    display: flex;    
+    flex-direction: column;
+}
+.skill h1{
+    color: var(--color_two);
+    letter-spacing: 2px;
+}
+.skill .skill-icon{
+    display: flex;
+    flex-wrap: wrap;    
+    padding: 10px 0 20px 0;
+}
+.skill .skill-icon i{
+    font-size: 25px;
+    padding: 10px;
+    color: var(--color_three);    
+}
+.skill .skill-icon i span{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+}
 /* ------------------------------------------------------------ */
 /* -------------------Section - Proyects-------------------------------------------- */
-
+/* ------------------------------------------------------------ */
 .section__proyect--cards{
     display: flex;
     flex-direction: column;
@@ -383,6 +354,7 @@ body::-webkit-scrollbar-thumb{
 
 /* ----------------------------------------------------- */
 /* -------------------Section - Footer-------------------------------------------- */
+/* ----------------------------------------------------- */
 .footer{    
     display: flex;
     flex-direction: column;
@@ -406,10 +378,6 @@ body::-webkit-scrollbar-thumb{
     font-size: 1.5rem;
     margin-bottom: 3rem;
 }
-.footer h4{
-    position: absolute;
-    bottom: 2%;    
-}
 
 .footer__social--media{
     position: relative;
@@ -422,10 +390,11 @@ body::-webkit-scrollbar-thumb{
     position: relative;
     text-decoration: none;
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;    
-    margin: 5px;
-    color: var(--background_m);
+    width: 4rem;
+    height: 4rem;    
+    margin: 10px;
+    font-size: 40px;
+    color: var(--background_m);    
     box-shadow: 0 0 5px var(--background);    
 }
 
@@ -435,15 +404,32 @@ body::-webkit-scrollbar-thumb{
     left: 50%;
     transform: translate(-50%, -50%);    
 }
+.footer h4{
+    position: absolute;
+    bottom: 2%;    
+}
+
 
 @media screen and (min-width: 600px) {     
     .article__presentation{
         top: 65%;
         transition: .8s;
     }
+    .skill{
+        align-items: center;
+    }
+    .section__skill{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        margin: 60px;
         
-    .article__description{margin: 0 55px;}
-
+    }
+    .skill .skill-icon{
+        margin: auto;
+        flex-direction: column;
+    }
+    
     .section__presentation{ display: flex;}        
 
     .figure__img-1 img{
@@ -452,12 +438,6 @@ body::-webkit-scrollbar-thumb{
     } 
 
     .section_title{ padding-top: 5rem;}
-
-    .section_services--cards{        
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5rem;
-    }
 }
 
 @media screen and (min-width: 800px){
@@ -508,26 +488,7 @@ body::-webkit-scrollbar-thumb{
     .section__presentation{flex-direction: row;}
 
     .section__subtitle{ padding: 3rem;}
-
-    .section__skill{
-        grid-template-columns: repeat(5,1fr);
-        grid-gap: 2rem;       
-    }
-
-    .services__card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .services__card p{
-        width: 70%;
-        text-align: center;        
-    }
-
-    .services__card img{ width: 35%;}   
-   
+     
     .social__media--link{
        width: 3.2rem;
        height: 3.2rem;
@@ -544,9 +505,10 @@ body::-webkit-scrollbar-thumb{
     }
     
     .proyects__card img{ height: 250px;}
+
     .proyects__card img:hover{
         transform: scale(1.07);
-        transition: all 0.5s;
-    
+        transition: all 0.5s;    
     }
+    .article__description p{ margin-right: 100px; }
 }
