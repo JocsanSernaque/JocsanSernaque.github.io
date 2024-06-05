@@ -206,13 +206,15 @@ body::-webkit-scrollbar-thumb{
     width: 200px;
     height: 200px;
     border-radius: 50%;  
+    
      
 }
 
 .figure__img img{    
     width: inherit;    
     object-fit: cover;
-    clip-path: circle(50% at 50% 50%);    
+    clip-path: circle(50% at 50% 50%);   
+
 }
 /* ----------------------------------------------------- */
 /* -------------------Section - About -------------------------------------------- */
@@ -325,6 +327,9 @@ body::-webkit-scrollbar-thumb{
     padding: 0 10px;
     font-family: 'Poppins', sans-serif;
 }
+.skill span{
+    color: var(--color_three);  
+}
 /* ------------------------------------------------------------ */
 /* -------------------Section - Proyects-------------------------------------------- */
 /* ------------------------------------------------------------ */
@@ -436,7 +441,7 @@ body::-webkit-scrollbar-thumb{
     }
     .section__skill{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
         margin: 60px;
         
