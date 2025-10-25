@@ -36,7 +36,7 @@
 
     <main class="main__home bg-p" id="home">
         <article class="article__presentation">
-            <p>¡Hola!, gracias por visitarme.</p>
+            <p>¡Hola!, gracias por visitarme. Soy</p>
             <h1>Jocsan Sernaque</h1>
             <p class="spaciality">Frontend Developer</p>
             <p>Creo sitios web espectaculares.</p>
@@ -57,7 +57,7 @@
         </article>
 
         <figure class="figure__img">
-            <img src="images/jocsan.webp" alt="thejocsanjs" loading="lazy">
+            <img src="images/thejocsanjs.webp" alt="thejocsanjs" loading="lazy">
         </figure>
     </main>
 
@@ -68,13 +68,34 @@
         <div class="section__proyect--cards">
 
             <div class="proyects__card">
-                <a href="https://github.com/JocsanSernaque/miskimayo-landing" target="_blank">
+                <a href="https://mi-tercer-regalo.vercel.app/" target="_blank">
+                    <img src="images/MiTercerRegalo.webp" alt="Mi Tercer Regalo" loading="lazy">
+                </a>
+                <div class="proyects__card-tags">
+                    <span>Angular / Tailwind </span>
+                    <h3>Mi Tercer Regalo</h3>
+                    <p>Sitio web para la tienda de regalos Mi Tercer Regalo. Se implementaron detalles para ampliar su alcance a clientes de todo Piura</p>
+                </div>
+            </div>
+            <div class="proyects__card">
+                <a href="https://miskimayo-landing.vercel.app/" target="_blank">
                     <img src="images/miskimayo-landing.webp" alt="Miski Mayo" loading="lazy">
                 </a>
                 <div class="proyects__card-tags">
                     <span>Astro / Tailwind </span>
                     <h3>MiskiMayo - Landing</h3>
                     <p>Rediseño del sitio web de la minera Miskimayo. Se renovó la estructura y el formato de navegación con el fin de mejorar la experienca de usuario.</p>
+                </div>
+            </div>
+            <div class="proyects__card">
+                <a href="https://jocsansernaque.github.io/landing-page-Piura/" target="_blank">
+                    <img src="images/piura.webp" alt="Piura-Perú" loading="lazy">
+                </a>
+                <div class="proyects__card-tags">
+                    <span>Html / Css</span>
+                    <h3>SPA Piura</h3>
+                    <p>Single Page Application de la calurosa ciudad de Piura - Perú, muestra sus lugares turísticos y
+                        sus tradiciones.</p>
                 </div>
             </div>
             <div class="proyects__card">
@@ -88,7 +109,6 @@
                         aplicación. Creado con React js, se utilizó la api de pokeapi.co y se estilo con CSS puro. </p>
                 </div>
             </div>
-
             <div class="proyects__card">
                 <a href="https://jocsansernaque.github.io/app-spacex-react/" target="_blank">
                     <img src="images/spacex.webp" alt="App SpaceX" loading="lazy">
@@ -120,19 +140,6 @@
                     <p>Desarrollo de un sistema CRUD, donde se crean registros, se actualizan, se listan y se eliminan.</p>
                 </div>
             </div>
-
-            <div class="proyects__card">
-                <a href="https://jocsansernaque.github.io/landing-page-Piura/" target="_blank">
-                    <img src="images/piura.webp" alt="Piura-Perú" loading="lazy">
-                </a>
-                <div class="proyects__card-tags">
-                    <span>Html / Css</span>
-                    <h3>SPA Piura</h3>
-                    <p>Single Page Application de la calurosa ciudad de Piura - Perú, muestra sus lugares turísticos y
-                        sus tradiciones.</p>
-                </div>
-            </div>
-
             <div class="proyects__card">
                 <a href="https://github.com/JocsanSernaque/crud-javascript" target="_blank">
                     <img src="images/crud-javascript.webp" alt="Crud basic with javascript" loading="lazy">
@@ -169,14 +176,15 @@
                     Egresado en Computación e Informática en el Instituto de Educación Superior
                     Tecnológico Público de las Fuerzas Armadas <a href="https://www.iestpffaa.edu.pe/"
                         class="light-link" target="_blank">"IESTPFFAA"</a>, Lima - Perú.<br>
-                    Soy un desarrollador Front-end con una sólida formación técnica y me encuentro en una etapa de
-                    crecimiento con ganas de experimentar nuevos retos, aplicar mis conocimientos y a desarrollarme profesionalmente en una empresa
-                    enfocada al desarrollo de tecnologías.<br>
-                    Me gusta aprender cosas nuevas, soy autodidacta, me encanta
-                    la creatividad y amo lo que hago.<br>
+
+                    Soy Frontend Developer y UX/UI Designer con pasión por la tecnología y el 
+                    aprendizaje autodidacta. Me especializo en el desarrollo de interfaces intuitivas,
+                    accesibles y visualmente atractivas, utilizando tecnologías como Angular, JavaScript, 
+                    TypeScript, HTML y CSS. Disfruto optimizando experiencias digitales, asegurando un diseño 
+                    centrado en el usuario y aplicando buenas prácticas de desarrollo. Siempre en búsqueda 
+                    de nuevos retos y oportunidades de crecimiento.
                 </p>
                 <ul class="article__info">
-                    <li class="info__item"><span class="item">Nombre:</span>Jocsan Israel Sernaque Cobeñas</li>
                     <li class="info__item"><span class="item">Interés Laboral:</span>Desarrollador / Diseñador Web</li>
                     <li class="info__item"><span class="item">Freelancer:</span>Disponible</li>
                     <li class="info__item"><span class="item">Email:</span>jocsansernaque@gmail.com</li>
@@ -187,53 +195,57 @@
         <!-- skill -->
 
         <section class="section__skill">
-
-            <div class="skill">
-                <h1>Frontend</h1>
-                <div class="skill-icon">
-                    <i class="fab fa-html5"><span>html5</span></i>
-                    <i class="fab fa-css3-alt"><span>css5</span></i>
-                    <i class="fab fa-js"><span>javascript</span></i>
-                    <i class="fab fa-react"><span>react js</span></i>
-                    <span>
-                        <img src="images/TailwindCssl.svg" />Tailwind Css
-                    </span>
-                    <span>
-                        <img src="images/astro.svg" />Astro
-                    </span>
-                    <i class="fab fa-bootstrap"><span>bootstrap</span></i>
-                   
-                                    
+            <div class="skill__description">
+                <h2 class="section__title">Habilidades Tecnológicas</h2>
+                <div>
+                    <p>Estas son algunas de las tecnologías y herramientas con las que he trabajado:</p>
                 </div>
             </div>
             <div class="skill">
-                <h1>Diseño</h1>
-                <div class="skill-icon">
-                    <i class="fab fa-figma"><span>figma</span></i>                    
-                    <i class="fas fa-file-powerpoint"><span>photoshop</span></i>
+                <div class="skill-tecnologies">
+                    <h3>Frontend</h3>
+                    <div class="skill-tecnologi-names">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                        <span>Angular</span>
+                        <span>React</span>
+                        <span>Astro</span>
+                </div>
+                </div>
+                <div class="skill-tecnologies">
+                    <h3>Backend</h3>
+                    <div class="skill-tecnologi-names">
+                        <span>php</span>
+                        <span>java</span>
+                        <span>mysql</span>
+                        <span>oracle</span>
+                    </div>
+                </div>
+                <div class="skill-tecnologies">
+                    <h3>Diseño</h3>
+                    <div class="skill-tecnologi-names">
+                        <span>photoshop</span>
+                        <span>illustrator</span>
+                        <span>figma</span>
+                        <span>Tailwind</span>
+                        <span>A. Material</span>
+                    </div>
+                </div>            
+                <div class="skill-tecnologies">
+                    <h3>Otros</h3>
+                    <div class="skill-tecnologi-names">
+                        <span>git</span>
+                        <span>github</span>
+                        <span>postman</span>
+                        <span>MS Excel</span>
+                    </div>
                 </div>
             </div>
-            <div class="skill">
-                <h1>Backend</h1>
-                <div class="skill-icon">
-                    <i class="fab fa-php"><span>php</span></i>
-                    <i class="fab fa-java"><span>java</span></i>
-                    <i class="fas fa-database"><span>mysql</span></i>
-                </div>
-            </div>
-            <div class="skill">
-                <h1>Otros</h1>
-                <div class="skill-icon">
-                    <i class="fab fa-git-alt"><span>git</span></i>
-                    <i class="fab fa-github"><span>github</span></i> 
-                    <i class="fa fa-file-excel"><span>MS Excel</span></i>  
-                </div>
-            </div>
-           
         </section>
     </section>
 
-    
+    <!-- FOOTER -->
 
     <footer class="footer">
         <h3>Jocsan Sernaque</h3>
